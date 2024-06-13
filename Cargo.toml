@@ -1,0 +1,15 @@
+[package]
+name = "tonic-hyper10-debug"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.7", features = ["derive"] }
+tokio = { version = "1.38.0", features = ["full"] }
+
+# tonic = "0.11.0"
+tonic = { git = "https://github.com/hyperium/tonic" }
+
+[build-dependencies]
+# tonic-build = "0.11.0"
+tonic-build = { git = "https://github.com/hyperium/tonic" }
